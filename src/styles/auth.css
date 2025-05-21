@@ -1,0 +1,107 @@
+.auth-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px 40px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .auth-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    transition: border 0.3s ease;
+  }
+  
+  .auth-container input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .auth-container button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .auth-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .auth-container p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .auth-container p button {
+    background: none;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  
+  .auth-container p button:hover {
+    color: #0056b3;
+  }
+  
+  .auth-container .error-message {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .auth-container .success-message {
+    color: green;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .auth-container button.logout-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d9534f; /* Bootstrap's red for danger */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%; /* Makes the button full-width for better touch targeting */
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .auth-container button.logout-btn:hover {
+    background-color: #c9302c; /* Darker red on hover */
+  }
+  
+  .auth-container button.logout-btn:active {
+    transform: scale(0.98); /* Subtle press effect */
+  }
+  
+  .auth-container button.logout-btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Red outline for focus */
+  }
+  

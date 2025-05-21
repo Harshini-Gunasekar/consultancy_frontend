@@ -1,0 +1,343 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Layout */
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-container {
+  display: flex;
+  background-color: #ecf9fe;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  filter: brightness(0.7);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.shop-now {
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shop-now:hover {
+  background-color: #0077b6;
+}
+
+/* Product Showcase */
+.products-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  width: 260px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.explore-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00b4d8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.explore-link:hover {
+  color: #0077b6;
+}
+
+/* Footer */
+
+.hero-section.updated-hero {
+  position: relative;
+  width: 100%;
+  height: 500px; /* You can adjust this to suit the design */
+}
+
+.carousel-box {
+  width: 100%;
+  max-width: 1200px; /* Optional: Limit the size of the carousel */
+  margin: 0 auto;
+  border: 3px solid #000; /* Adds a border around the carousel box */
+  border-radius: 15px; /* Optional: Rounded corners */
+  overflow: hidden; /* Ensures images are clipped inside the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a 3D effect */
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-overlay {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the box nicely */
+}
+
+.hero-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.hero-buttons .shop-now,
+.hero-buttons .learn-more {
+  padding: 12px 25px;
+  font-size: 1rem;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero-buttons .shop-now:hover,
+.hero-buttons .learn-more:hover {
+  background-color: #0056b3;
+}
+.categories .home-text{
+  padding: 80px 2% 60px;
+}
+.categories h1 {
+  font-size: 2.0rem; /* Increased font size */
+  font-weight: 700;  /* Bolder text */
+  margin-bottom: 20px;
+        /* Darker color for better contrast */
+  /* Optional: Makes the text more prominent */
+}
+
+.categories-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.row-img {
+  overflow: hidden;
+  width: 180px;
+  height: 250px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 80px;
+  cursor: pointer;
+}
+
+.row-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.7s;
+}
+
+.row-img img:hover {
+  transform: scale(1.2);
+}
+
+.categories-content h4 {
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.categories-content h4:hover {
+  color: var(--main-color);
+}
+/* Quotes Section */
+/* Quotes Section */
+/* Quotes Section */
+.quotes-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.quotes-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.quote-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.quote-box {
+  padding: 40px 50px;
+  background: linear-gradient(135deg, #426ae0, #00b4d8);
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  font-style: italic;
+  max-width: 500px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.quote-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.4);
+}
+/* Footer Styling */
+.footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  position: relative; /* Remove fixed positioning */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-content h2 {
+  font-size: 1.8rem;
+  margin: 5px 0;
+}
+
+.footer-content p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.footer-content p span {
+  margin: 0 20px;
+}
+
+/* General Layout */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Ensures full viewport height */
+  max-width:1700px;
+  margin: auto;
+  padding: 20px;
+  margin-top: auto;  /* Ensures footer is pushed down when content is less */
+}
+
+.main-content {
+  flex: 1; /* Ensures the main content takes up remaining space */
+}

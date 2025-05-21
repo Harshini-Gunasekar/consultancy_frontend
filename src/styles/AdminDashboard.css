@@ -1,0 +1,102 @@
+.admin-dashboard {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.admin-dashboard h1 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.dashboard-toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.dashboard-toggle-buttons button {
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-toggle-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-toggle-buttons button.active {
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  color: #111;
+  transform: scale(1.05);
+}
+
+.dashboard-section {
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.mark-paid-btn {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.mark-paid-btn:hover {
+  background-color: #388e3c;
+}
+
+.reject-btn {
+  padding: 8px 12px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.reject-btn:hover {
+  background-color: #c62828;
+}
+
+.rejected-status {
+  color: red;
+  font-weight: bold;
+}
+
+.rejected-btn {
+  padding: 8px 12px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: default;
+}
